@@ -1,0 +1,16 @@
+<h2>Emite GWT XMPP Library</h2>
+<%= title 'Ping demo' %>
+
+<div class="actions">
+  <%= link_to 'Volver', root_path %>
+  <%= link_to 'Pong demo', {:action => 'pong'} %>
+</div>
+
+
+<% content_for :head do %>
+    <meta name="emite.user" content="test1@emitegwt.info"/>
+    <meta name="emite.password" content="test1"/>
+    <meta name="pingpong.type" content="ping"/>
+    <meta name="pingpong.other" content="test2@emitegwt.info"/>
+    <script type="text/javascript" language="javascript" src="/PingPongExamples/PingPongExamples.nocache.js"></script>
+<% end %>

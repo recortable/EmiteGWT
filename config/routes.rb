@@ -1,4 +1,8 @@
 EmiteGWT::Application.routes.draw do
+  get "demos/ping"
+
+  get "demos/pong"
+
   root :to => "pages#index"
-  match '/:action' => "pages"
+  match '/demo/:action' => "demos"
 end
